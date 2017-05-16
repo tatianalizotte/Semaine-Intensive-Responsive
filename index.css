@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+/*-----FONT-------*/
+
+@font-face {
+    font-family: 'acronymblack';
+    src: url('font/acronym-black-webfont.eot');
+    src: url('font/acronym-black-webfont.eot?#iefix') format('embedded-opentype'), url('font/acronym-black-webfont.woff2') format('woff2'), url('font/acronym-black-webfont.woff') format('woff'), url('font/acronym-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'acronymbold';
+    src: url('font/acronym-bold-webfont.eot');
+    src: url('font/acronym-bold-webfont.eot?#iefix') format('embedded-opentype'), url('font/acronym-bold-webfont.woff2') format('woff2'), url('font/acronym-bold-webfont.woff') format('woff'), url('font/acronym-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'acronymlight_italic';
+    src: url('font/acronym-lightitalic-webfont.eot');
+    src: url('font/acronym-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('font/acronym-lightitalic-webfont.woff2') format('woff2'), url('font/acronym-lightitalic-webfont.woff') format('woff'), url('font/acronym-lightitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'acronymregular';
+    src: url('font/acronym-regular-webfont.eot');
+    src: url('font/acronym-regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/acronym-regular-webfont.woff2') format('woff2'), url('font/acronym-regular-webfont.woff') format('woff'), url('font/acronym-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'acronymsemibold';
+    src: url('font/acronym-semibold-webfont.eot');
+    src: url('font/acronym-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('font/acronym-semibold-webfont.woff2') format('woff2'), url('font/acronym-semibold-webfont.woff') format('woff'), url('font/acronym-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*-----RESET------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/*--------menu---------*/
+
+nav {
+    width: 20%;
+    height: 100vh;
+    background-color: #202020;
+    float: left;
+    position: fixed;
+}
+
+nav ul {
+    color: #fff;
+}
+
+
+/*header accueil*/
+
+header {
+    width: 80%;
+    height: 80vh;
+    overflow: hidden;
+    padding-top: 10vh;
+    position: relative;
+    float: right;
+    z-index: -40;
+}
+
+header img {
+    width: 100%;
+    -webkit-filter: brightness(64%);
+    /* Safari 6.0 - 9.0 */
+    filter: brightness(64%);
+    position: absolute;
+}
+
+header h2 {
+    text-align: right;
+    position: relative;
+    color: #fff;
+    font-family: 'acronymbold', sans-serif;
+    font-size: 6.4rem;
+    width: 85%;
+    line-height: 13rem;
+    margin: auto;
+    padding-top: 10%;
+}
+
+
+/*----------------Nos Revues accueil--------------*/
+
+.article-revues {
+    float: left;
+    margin-left: 25%;
+    width: 40%;
+    position: relative;
+}
+
+.article-revues>h2 {
+    font-family: 'acronymbold', sans-serif;
+    font-size: 4.2rem;
+    margin: 12% 0 2% 0;
+}
+
+.article-revues article {
+    position: relative;
+    overflow: hidden;
+    margin: 5% 0;
+}
+
+.article-revues article .info {
+    position: absolute;
+    z-index: 10;
+    margin: 25% 0 0 5%;
+    transform: translateY(-45%);
+    width: 80%
+}
+
+.article-revues article .info h2 {
+    font-family: 'acronymblack', sans-serif;
+    font-size: 4.7rem;
+    color: #fff;
+}
+
+.article-revues article .info p {
+    font-family: 'acronymsemibold', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.article-revues article figure {
+    height: 43vh;
+}
+
+.article-revues article figure img {
+    width: 100%;
+}
+
+.article-revues article figure:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 70%);
+    /* W3C */
+}
+
+
+/*---------------Articles accueil-----------------*/
+
+.aside-actu {
+    position: absolute;
+    z-index: 50;
+    width: 22%;
+    margin: 38.5% 5% 0 72%;
+}
+
+.aside-actu h2 {
+    font-family: 'acronymbold', sans-serif;
+    font-size: 4.2rem;
+    color: #fff;
+}
+
+.aside-actu article {
+    overflow: hidden;
+    background-color: #fff;
+    width: 95%;
+    height: 50vh;
+    margin: 8% 0;
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=180, Strength=4);
+}
+
+.aside-actu article p {
+    font-family: acronymlight_italic, sans-serif;
+    color: #9B9B9B;
+    font-size: 1.2rem;
+    margin: 3% 10%;
+}
+
+.aside-actu article figure {
+    height: 50%;
+    overflow: hidden;
+}
+
+.aside-actu article figure img {
+    width: 100%;
+}
+
+.aside-actu article p:last-child {
+    margin: 0 10% 0 10%;
+}
+
+.aside-actu article h3 {
+    font-family: 'acronymsemibold', sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    margin: 8% 10% 3% 10%;
+}
