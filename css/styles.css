@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'acronymbold';
+    src: url('../font/acronym-bold-webfont.woff2') format('woff2'),
+    url('../font/acronym-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'acronymregular_italic';
+    src: url('../font/acronym-regularitalic-webfont.woff2') format('woff2'),
+    url('../font/acronym-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'acronymregular';
+    src: url('../font/acronym-regular-webfont.woff2') format('woff2'),
+    url('../font/acronym-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    padding: 0;
+    margin:0;
+
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 20%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    header.menu{
+        width: 100%;
+        height: 10vh;
+        position: relative;
+
+    }
+
+    #logo{
+        display: none;
+    }
+
+    ul{
+
+    }
+
+    ul li{
+        float: left;
+        display: table-cell;
+        padding: 10px;
+        padding-top: 1px;
+
+    }
+
+    .mainarticle{
+        flex-direction: column;
+    }
+
+
+}
+p,
+a,
+h2,
+h1{
+    font-family: 'acronymbold',serif;
+}
+
+
+li{
+    font-family: 'acronymregular', serif;
+}
+.clearfix {
+    overflow: auto;
+}
+
+/* Sidebar Menu gauche */
+.menu {
+    background-color: #222222;
+    height: 100vh;
+    float: left;
+    text-align: justify;
+    padding-top: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+    position: fixed;
+}
+nav ul li{
+    list-style: none;
+
+
+}
+
+.menu a,
+.menu nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.active{
+    color: #33B8C8;!important;
+}
+
+#logo{
+    width: 300px;
+}
+
+.magazine{
+    width: 250px;
+}
+
+.partenaire p{
+    color: #9B9B9B;
+}
+
+.partenaire ul li{
+    font-style: italic;
+}
+
+.title{
+    width: 60%;
+    margin-left: 30%;
+}
+
+.title h1{
+    padding-top: 10%;
+
+    font-size: 3vw;
+    font-weight: bold;
+    width: 80%;
+}
+/*ARTICLE Remplacer par le php */
+.mainarticle{
+    display: flex;
+    padding-top: 5%;
+}
+
+.article{
+    /*float: left;*/
+    /*width: 45%;*/
+    padding-left: 25%;
+
+}
+
+.article a{
+
+}
+.partenaire{
+    /*float: right;*/
+    line-height: 30px;
+
+    word-break: normal;    /*width: 25%;*/
+
+}
+
+.partenaire h2{
+    padding-bottom: 25px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.footer{
+    line-height: 40;
+}
+
+
+/* formulaire */
+/*
+.contact{
+    display: flex;
+    padding-top: 5%;
+
+}
+
+.contactg{
+    width: 45%;
+    padding-left: 25%;
+    line-height: 100px;
+}
+.contactg form{
+    margin-left: 150px;
+}
+label{
+    display: block;
+    float: left;
+    width:150px;
+    text-align:right;
+}
+.contactg h1{
+    text-align: center;
+}
+
+.texted{
+    width: 40%;
+}*/
+
