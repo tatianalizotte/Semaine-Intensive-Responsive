@@ -12,6 +12,7 @@
 <head>
     <meta charset="utf-8">
     <title>L'architecture</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/formulaire.css">
     <link rel="stylesheet" href="css/parution.css">
