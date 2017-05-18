@@ -32,7 +32,7 @@
             <img class="magazine" src="content/couv_277.jpg" alt="magazine277"> <br>
             <a href="#">Commander</a>
         </div>
-        <div class="partenaire clearfix col-3">
+        <div class="partenaire clearfix col-6">
             <h2>Nos partenaires</h2>
             <p>Agencement, mobilier, métier d'art, décoration, cheminées</p>
             <ul>
