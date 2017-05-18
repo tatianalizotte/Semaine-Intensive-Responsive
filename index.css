@@ -72,7 +72,7 @@ nav ul {
 
 /*header accueil*/
 
-header {
+.header-accueil {
     width: 80%;
     height: 80vh;
     overflow: hidden;
@@ -82,7 +82,7 @@ header {
     z-index: -40;
 }
 
-header img {
+.header-accueil img {
     width: 100%;
     -webkit-filter: brightness(64%);
     /* Safari 6.0 - 9.0 */
@@ -90,7 +90,7 @@ header img {
     position: absolute;
 }
 
-header h2 {
+.header-accueil h2 {
     text-align: right;
     position: relative;
     color: #fff;
@@ -412,9 +412,180 @@ header h2 {
     margin: 0 0 23% 10%;
 }
 
-@media (max-width: 1270px) {}
+
+/*------------------ARTICLE------------*/
+
+
+/*header accueil*/
+
+.header-article {
+    width: 80%;
+    padding-top: 10vh;
+    position: relative;
+    float: right;
+    z-index: -40;
+}
+
+.header-article div {
+    height: 40vh;
+    overflow: hidden;
+}
+
+.header-article img {
+    width: 100%;
+}
+
+.header-article h2 {
+    font-family: acronymbold, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.header-article h3 {
+    font-family: acronymbold, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 5vh 0 2vh 0;
+}
+
+.header-article p {
+    font-family: acronymregular, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/*---------------article content----------*/
+
+.article-content {
+    float: right;
+    width: 75%;
+    margin: 5vh;
+}
+
+.article-content div {
+    overflow: auto;
+}
+
+.article-content #article-item1 {
+    width: 100%;
+}
+
+.article-content #article-item1 p {
+    width: auto;
+}
+
+.article-content div img {
+    width: 40%;
+    float: right;
+    margin: 5vh;
+}
+
+.article-content div:nth-child(odd) img {
+    float: left;
+    width: 30%;
+}
+
+.article-content div:nth-child(odd) p {
+    float: right;
+    width: 40%;
+}
+
+.article-content div p {
+    font-family: acronym, sans-serif;
+    font-size: 2rem;
+    padding: 6rem;
+    color: #9b9b9b;
+    width: 30%;
+    margin: 3vh;
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/*____________MEDIAQUERIES___________*/
+
+@media (max-width: 1270px) {
+    .article-content {
+        overflow: hidden;
+        float: right;
+        width: 70%;
+        margin: 5vh;
+    }
+    .article-content div {}
+    .article-content div img {
+        width: 83%;
+        float: none;
+        margin: 0 0 0 7vh;
+    }
+    .article-content div:nth-child(odd) img {
+        width: 83%;
+        float: none;
+        margin: 0 0 0 7vh;
+    }
+    .article-content div:nth-child(odd) p {
+        float: none;
+        width: 70%;
+    }
+    .article-content div p {
+        font-family: acronym, sans-serif;
+        font-size: 2rem;
+        padding: 6rem;
+        color: #9b9b9b;
+        width: 70%;
+        margin: 3vh;
+        -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.5);
+        -o-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+}
 
 @media (max-width: 780px) {
+    .article-content {
+        overflow: hidden;
+        float: right;
+        width: 100%;
+        margin: 5vh;
+    }
+    .article-content div {
+        overflzow: auto;
+    }
+    .article-content div img {
+        width: 83%;
+        float: none;
+        margin: 0 0 0 7vh;
+    }
+    .article-content div:nth-child(odd) img {
+        width: 83%;
+        float: none;
+        margin: 0 0 0 7vh;
+    }
+    .article-content div:nth-child(odd) p {
+        float: none;
+        width: 70%;
+    }
+    .article-content div p {
+        font-family: acronym, sans-serif;
+        font-size: 2rem;
+        padding: 6rem;
+        color: #9b9b9b;
+        width: 70%;
+        margin: 3vh;
+        -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.5);
+        -o-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+    nav {
+        display: none;
+    }
+    .header-article {
+        width: 100%;
+    }
     #svgb {
         width: 30vw;
     }

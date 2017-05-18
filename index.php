@@ -19,7 +19,7 @@
         </ul>
     </nav>
 
-    <header>
+    <header class="header-accueil">
         <img src="img/fre-sonneveld-156775.jpg" alt="">
         <h2>Toute l'acualité de l'architecture et de la construction</h2>
     </header>
